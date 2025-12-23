@@ -1,0 +1,9 @@
+name: Demo9
+on: workflow_dispatch
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "${{runner.os}}"
+        - run: echo "${{runner.arch}}"
+        
