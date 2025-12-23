@@ -1,0 +1,23 @@
+name: demo5
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this first job
+        run: echo "first job"
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    if: ${{always()}}
+    steps:
+      - name: this second job
+        run: echo "second job"
+  job3:
+    runs-on: ubuntu-latest
+    needs: job2
+     if: ${{always()}}
+    steps:
+      - name: this third job
+        run: echo "third job"
+  
