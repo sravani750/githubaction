@@ -1,4 +1,4 @@
-name: Demo7
+name: another_repo
 on: workflow_dispatch
 jobs:
   clone_another_repo:
