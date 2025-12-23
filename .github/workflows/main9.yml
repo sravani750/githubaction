@@ -1,34 +1,36 @@
 name: demo8
-on: 
+
+on:
   workflow_dispatch:
     inputs:
       job-to-run:
-      description: "which job to run(job1, job2, job3)"
-      required: true
-      type: choice
-      options:
-        -job1
-        -job2
-        -job3
-  #push: 
-    #branches: [main, develop, test]
-    #branches:
-      #- main
-      #- develop
-      #- test
+        description: "Which job to run (job1, job2, job3)"
+        required: true
+        type: choice
+        options:
+          - job1
+          - job2
+          - job3
+
 jobs:
   job1:
     runs-on: ubuntu-latest
+    if: ${{ github.event.inputs['job-to-run'] == 'job1' }}
     steps:
-      - name: this first job
+      - name: This is the first job
         run: echo "first job"
+
   job2:
     runs-on: ubuntu-latest
+    if: ${{ github.event.inputs['job-to-run'] == 'job2' }}
     steps:
-      - name: this second job
+      - name: This is the second job
         run: echo "second job"
+
   job3:
     runs-on: ubuntu-latest
+    if: ${{ github.event.inputs['job-to-run'] == 'job3' }}
     steps:
-      - name: this third job
+      - name: This is the third job
         run: echo "third job"
+
