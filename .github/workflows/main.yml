@@ -1,4 +1,4 @@
-name: Demo-1
+name: simple_yaml_file
 on: workflow_dispatch
 jobs: 
   demo-1-job:
