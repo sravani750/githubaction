@@ -1,0 +1,24 @@
+name: demo5
+on: 
+  push: 
+    branches: [main]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this first job
+        run: exit:
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    if: ${{alaways()}}
+    steps:
+      - name: this second job
+        run: echo "second job"
+  job3:
+    runs-on: ubuntu-latest
+    needs: job2
+    if: ${{alaways()}}
+    steps:
+      - name: this third job
+        run: echo "third job"
