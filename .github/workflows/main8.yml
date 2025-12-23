@@ -1,0 +1,14 @@
+name: Demo7
+on: workflow_dispatch
+jobs:
+  clone_another_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+        with:
+          repository: sravani750/sep
+          path: sravani750githubaction/demo7
+
+          
+         
+    
