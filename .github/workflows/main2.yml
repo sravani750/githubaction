@@ -1,7 +1,7 @@
 name: Demo2
 on: workflow_dispatch
 jobs:
-  clone_my_repo:
+  my_repo:
     runs-on: ubuntu-latest
     steps:
       - name: print GithubActor
