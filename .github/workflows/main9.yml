@@ -1,10 +1,11 @@
 name: demo8
 on: 
+  workflow_dispatch:
   push: 
     #branches: [main, develop, test]
     branches:
       - main
-      - dvelop
+      - develop
       - test
 jobs:
   job1:
