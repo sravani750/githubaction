@@ -1,4 +1,4 @@
-name: demo5
+name: parallel_jobs
 on: 
   push: 
     branches: [main]
