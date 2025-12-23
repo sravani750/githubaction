@@ -1,4 +1,4 @@
-name: chose_job
+name: choice
 
 on:
   workflow_dispatch:
