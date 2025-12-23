@@ -1,0 +1,8 @@
+name: demo3
+on:  workflow_dispatch
+jobs:
+  clone_my_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - run: ls_lart
