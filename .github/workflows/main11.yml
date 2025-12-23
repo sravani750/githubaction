@@ -1,0 +1,13 @@
+name: Demo10
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20]
+    steps:
+      - name: Matrix  variable demo
+        run: |
+            echo "Matrix Node Version: ${{matrix.node}} 
+    
