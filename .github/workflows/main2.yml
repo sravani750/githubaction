@@ -4,5 +4,4 @@ jobs:
   clone_my_repo:
     runs-on: ubuntu-latest
       steps:
-        -uses: actions/checkout@v4
-        -run:  ls_lart
+        -run:  ech0 "${{github.actor}}"
