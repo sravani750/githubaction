@@ -1,4 +1,4 @@
-name: demo4
+name: sequential
 on: 
   push: 
     branches: [main]
