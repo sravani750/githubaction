@@ -1,5 +1,5 @@
 name: Demo2
-on: workflow-dispatch:
+on: workflow_dispatch
 jobs:
   clone_my_repo:
     runs-on: ubuntu-latest
