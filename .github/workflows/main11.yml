@@ -1,4 +1,4 @@
-name: Demo10
+name: matrix_variable
 on: workflow_dispatch
 jobs:
   build:
