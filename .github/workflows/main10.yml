@@ -1,4 +1,4 @@
-name: Demo9
+name: os_relate_variable
 on: workflow_dispatch
 jobs:
   my_job:
