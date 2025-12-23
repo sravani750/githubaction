@@ -1,12 +1,21 @@
 name: demo8
 on: 
   workflow_dispatch:
-  push: 
+    inputs:
+      job-to-run:
+      description: "which job to run(job1, job2, job3)"
+      required: true
+      type: choice
+      options:
+        -job1
+        -job2
+        -job3
+  #push: 
     #branches: [main, develop, test]
-    branches:
-      - main
-      - develop
-      - test
+    #branches:
+      #- main
+      #- develop
+      #- test
 jobs:
   job1:
     runs-on: ubuntu-latest
