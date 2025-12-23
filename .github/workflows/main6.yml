@@ -1,4 +1,4 @@
-name: demo5
+name: demo6
 on: workflow_dispatch
 jobs:
   job1:
