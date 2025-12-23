@@ -1,4 +1,4 @@
-name: demo6
+name: runs_even_earlier_job_fails
 on: workflow_dispatch
 jobs:
   job1:
