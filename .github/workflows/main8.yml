@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: sravani750/sep/firstfile.sh
+          repository: sravani750/sep
           path: sravani750githubaction/demo7
 
           
