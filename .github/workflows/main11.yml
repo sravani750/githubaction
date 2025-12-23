@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Matrix  variable demo
         run: |
-            echo "Matrix Node Version: ${{matrix.node}} 
+            echo "Matrix Node Version: ${{matrix.node}}"
     
