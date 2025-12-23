@@ -1,4 +1,4 @@
-name: Demo2
+name: git_contex_variable
 on: workflow_dispatch
 jobs:
   my_repo:
