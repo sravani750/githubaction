@@ -3,5 +3,6 @@ on: workflow_dispatch
 jobs:
   clone_my_repo:
     runs-on: ubuntu-latest
-      steps:
-        -run:  ech0 "${{github.actor}}"
+        steps:
+          - name: print GithubActor
+            run:  echo "${{github.actor}}"
