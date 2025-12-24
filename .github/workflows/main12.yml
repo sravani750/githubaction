@@ -9,7 +9,7 @@ jobs:
       - name: set output message
         id: set_output
         run: |
-          echo "message = hello from job 1" >> $GITHUB_OUTPUT
+          echo "message=hello from job 1" >> $GITHUB_OUTPUT
           echo "set output: hi"
           echo "set second output: welcome to githubactions"
   job2:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: print recieved output
         run: |
-         echo "message from job1:${{needs.job1.outputs.message}}"
+         echo "message from job1: ${{needs.job1.outputs.message}}"
   
           
           
