@@ -23,10 +23,9 @@ jobs:
            name: file_data
      - name: read data
        run: |
-         echo cat file.txt
-         echo grep "s" file.txt
-         echo sed 's/A/a/g' file.txt
-         
+        cat file.txt
+        grep "s" file.txt
+        sed 's/A/a/g' file.txt
        
     
   
