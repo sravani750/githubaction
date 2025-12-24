@@ -7,7 +7,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
        - name: create data
-         run: echo "myfile Ansible is an open-source automated tool" >> file.txt
+         run: echo "Ansible is an open-source automated tool" >> file.txt
        - name: upload file
          uses: actions/upload-artifact@v4
          with:
@@ -22,10 +22,8 @@ jobs:
        with:
            name: file_data
      - name: read data
-       run: |
-         cat file.txt
-         grep "s" file.txt
-         sed 's/A/a/g' file.txt
+       run: cat file.txt
+       
     
   
      
