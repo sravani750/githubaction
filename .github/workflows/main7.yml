@@ -7,11 +7,11 @@ jobs:
      - name: Repository variables demo
        run: |
         echo "APP_NAME: ${{vars.APP_NAME}}"
-        echo "DEPLOY_REGION: ${{vars.DEPLOY_REGION}}"
+        echo "ENV_VAR: ${{vars.ENV_VAR}}"
      - name: secrets demo(masked)
        env:
-         DEMO_SECRET: ${{secrets.DEMO_SECRET}}
+         SECRET_NAME: ${{secrets.SECRET_NAME}}
        run: |
-           echo "secret length is: ${#DEMO_SECRET}"
+           echo "secret length is: ${#SECRET_NAME}"
         
    
