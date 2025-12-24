@@ -13,6 +13,7 @@ jobs:
           echo "set second output: welcome to githubactions"
   job2:
     runs-on: ubuntu-latest
+    needs: job1
     steps:
       - name: print recieved output
         run: |
