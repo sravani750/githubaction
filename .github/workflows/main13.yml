@@ -1,0 +1,26 @@
+name: passing_file
+on: 
+  push:
+    branches: [main]
+jobs:
+  job1:
+   runs-on: ubuntu-latest
+   steps:
+       - name: create data
+         run: echo "myfile" >> file.txt
+       - name: upload file
+         uses: actions/upload-artifact@v4
+         with:
+           name: file_data
+           path: file.txt
+  job2:
+   needs: job1
+   runs-on: ubuntu-latest
+   steps:
+     - name: download_artifact
+       uses: actions/download-artifact@v4
+       with:
+           name: file_data
+     - name: read data
+       run: cat file.txt
+     
