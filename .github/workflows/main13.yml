@@ -22,7 +22,11 @@ jobs:
        with:
            name: file_data
      - name: read data
-       run: cat file.txt
+       run: |
+         echo cat file.txt
+         echo grep "s" file.txt
+         echo sed 's/A/a/g' file.txt
+         
        
     
   
