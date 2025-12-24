@@ -3,8 +3,8 @@ on: workflow_dispatch
 jobs:
   job1:
     runs-on: ubuntu-latest
-    #outputs:
-      #message: ${{ steps.set_output.outputs.message }}
+    outputs:
+      message: ${{ steps.set_output.outputs.message }}
     steps:
       - name: set output message
         id: set_output
