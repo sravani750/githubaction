@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: set output message
         run: |
-          echo "second message =$second message" >> $GITHUB_OUTPUT
+          echo "message = hello from job 1" >> $GITHUB_OUTPUT
           echo "set output: hi"
           echo "set second output: welcome to githubactions"
   job2:
