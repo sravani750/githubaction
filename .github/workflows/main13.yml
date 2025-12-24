@@ -7,7 +7,17 @@ jobs:
    runs-on: ubuntu-latest
    steps:
        - name: create data
-         run: echo "myfile" >> file.txt
+         run: echo "myfile Ansible is an open-source automation tool used for
+
+Configuration management – ensuring servers are set up in a consistent way
+
+Application deployment – installing or updating software on multiple machines
+
+Task automation – automating repetitive tasks like backups or updates
+
+Orchestration – coordinating complex processes across multiple systems
+
+It is agentless, which means you don’t need to install any software on the servers you manage. Ansible uses SSH (for Linux) or WinRM (for Windows) to communicate." >> file.txt
        - name: upload file
          uses: actions/upload-artifact@v4
          with:
@@ -23,4 +33,7 @@ jobs:
            name: file_data
      - name: read data
        run: cat file.txt
+       run: find s file.txt
+       run: head file.txt
+       
      
